@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?w=1060&t=st=1669488146~exp=1669488746~hmac=650856d1524e3d3e144cf90092102a972c74d3f354ccee4b5ef45d3c6e44fdcf);
+  background-size: 1500px 800px;
+  background-attachment: fixed;
+}
+.logo {
+  flex: 1;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.logo h1 {
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.list-items {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.4s background;
+}
+
+.link:hover {
+  color: #ba4c4a;
+}
+
+.main {
+  display: flex;
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-left {
+  height: 100%;
+  width: 50%;
+}
+.main-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-v {
+  height: 20vw;
+  width: 20vw;  
+  padding: 20px 20px;
+}
+
+.main-right p {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.text {
+  margin-left: 18%;
+  padding-top: 5%;
+}
+
+.text span {
+  font-size: 6vw;
+  letter-spacing: 25px;
+  font-weight: bold;
+}
+
+.text p {
+  padding-top: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.right-bar {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon-btn {
+  margin-top: 20px;
+  background: white;
+  text-decoration: none;
+  color: grey;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+.icon-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+  position: absolute;
+  color: white;
+  top: 25px;
+  font-size: 20px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.a{
+	text-decoration: none;
+	color:#000000;
+}

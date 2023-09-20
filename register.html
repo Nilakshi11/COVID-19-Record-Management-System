@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+ 
+  <!-- jQuery CDN Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Registation form</title>
+  <style>
+	* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	}
+	body{
+	  font-family: Arial, Helvetica, sans-serif;
+	  background: linear-gradient(45deg, #49a09d, #5f2c82);
+	  background-image: url(https://img.freepik.com/free-vector/realistic-coronavirus-background_1393-285.jpg?w=1060&t=st=1669482288~exp=1669482888~hmac=98e49f66cb44a4e25806f6d57907214ec286bddd0e30ea0b86362043fcdd018e);
+	  background-size: 2000px 1000px;
+	  background-attachment: fixed;
+	}
+	/* align items center vertically and horizontally  */
+	.container{
+	  display: flex;
+	  justify-content: center;
+	  align-items:center !important;
+	  height: 2vh;
+	  width: 300vh;
+	  color: white;
+	}
+	.form{
+	  width: 500px;
+	  height: 700px;
+	  margin: -25px 30px;
+	  background-color: rgba(41, 39, 39, 0.3);
+	  box-shadow: 0 5px 30px black;
+	}
+	.btn button {	
+	  position: fixed;
+	  top: 10px;
+	  right: 260px;
+	  padding: 3px;
+	  margin: 30px 0px 40px 30px;
+	  border-style: none;
+	  background-color: transparent;
+	  color: rgb(10, 136, 43);
+	  font-size: 25px;
+	  font-weight: 550;
+	}
+	.formGroup{
+	  display: flex;
+	  justify-content: center;
+	}
+	.formGroup input{
+	  border: none;
+	  width: 80%;
+	  border-bottom: 2px solid white;
+	  padding: 10px;
+	  margin-bottom: 20px;
+	  font-size: 14px;
+	  font-weight: bold;
+	  background-color: transparent;
+	  color: white;
+	}
+	input:focus {
+	  outline: none !important;
+	  border-bottom: 2px solid rgb(91, 243, 131);
+	  font-size: 17px;
+	  font-weight: bold;
+	  color: white;
+	}
+	::placeholder {
+	  color: white;
+	}
+	
+	.checkBox{
+	  display: flex;
+	  justify-content: left;
+	  color: white;
+	  padding: 10px 50px;
+	  margin-bottom: 20px;
+	  font-weight: 550;
+	}
+	 
+	#checkbox{
+	  margin-right: 0px;
+	  height: 15px;
+	  width: 20px;
+	}
+	.text{
+	  color: white;
+	  font-size: 13px;
+	}
+	
+	.l{
+	  border: none;
+	  width: 80%;
+	  padding: 10px;
+	  margin-bottom: 5px;
+	  font-size: 14px;
+	  font-weight: bold;
+	  background-color: transparent;
+	  color: white;
+	}
+	
+	.btn2{
+	  padding: 10px;
+	  width: 150px;
+	  height: 50px;
+	  border-radius: 20px;
+	  background-color: rgb(10, 136, 43);
+	  border-style: none;
+	  color: white;
+	  font-weight: 600;
+	  justify-content: center;
+	}
+	.btn2:hover{
+	  background-color: rgba(10, 136, 43, 0.5);
+	}
+	.btn{
+		color:red;
+	}
+	.btn button:hover{
+	  border-bottom: 2px solid rgb(91, 243, 131);
+	}
+	.group{
+	  display: flex;
+	  justify-content: left;
+	  padding-left:50px;
+	}
+	select {
+		font-size: .9rem;
+	    display: flex;
+	    justify-content: right;
+	    padding: 5px 40px;
+	    margin-bottom: 10px;
+	}
+	.absolute {
+	  position: fixed;
+	  top: 90px;
+	  right: 320px;
+	  width: 300px;
+	  height: 300px;
+	  border: 3px solid #73AD21;
+	}
+	.con{
+		position: absolute;
+		top: 300%;
+		bottom: 150%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 800px;
+		border-collapse: collapse;
+		box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		border-color: rgba(0,0,0,0.1);
+	}
+	.abc{
+		background-color: rgba(255,255,255,0.2);
+		color: #fff;
+	}
+	.ths{
+		margin: 10px 20px 20px 20px;
+		padding: 5px 20px 10px 50px;
+	}
+	
+  </style>
+</head>
+ 
+<body>
+		<table class="container form">
+			
+				<tr><td></td></tr>
+				<tr>
+					<th align="left">Name</th>
+					<td class="formGroup"><input type="text" name="fname" id="fname"></td>
+				</tr>
+	        	<tr>
+					<th align="left">Age</th>
+					<td class="formGroup"><input type="text" name="age" id="age"></td>
+				</tr>
+				<tr>
+					<th align="left">Email</th>
+					<td class="formGroup"><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<th align="left">Blood Group</th>
+					<td class="formGroup"><input type="text" name="bg" id="bg"></td>
+				</tr>
+				<tr>
+					<th align="left">Address</th>
+					<td class="formGroup"><input type="text" name="add" id="add"></td>
+				</tr>
+				<tr>
+					<th align="left">Birth Date</th>
+					<td class="formGroup"><input type="date" placeholder="Enter date of birth" name="dob" id="dob" required>
+					</td>
+				</tr>
+				<tr>
+					<th align="left">Mobile no</th>
+					<td class="formGroup"><input type="text" name="mb" id="mb"></td>
+				</tr>
+				<tr>
+					<th align="left">Gender</th>	
+					<td class="formGroup"><input type="radio" value="Female" name="r1"  id="gen">Female</input>
+					<input type="radio" value="Male" name="r1" id="gen">Male</input></td>
+				</tr>
+				<tr>
+					<th align="left">Covid affected</th>
+					<td class="formGroup"><input type="date" placeholder="Enter date of affected" name="dob" id="ca" required>
+					</td>
+				</tr>
+				<tr>
+					<th align="left">Covid recover</th>
+					<td class="formGroup"><input type="date" placeholder="Enter date of recover" name="dob" id="cr" required>
+					</td>
+				</tr>
+				<tr>
+					<th align="left">Vaccine status</th>
+					<td class="formGroup"><input type="checkbox" value="Yes" name="vc" id="vc" checked></td>
+				</tr>
+				<br><br><br>
+				<tr class="formGroup">
+					<th class="btn2"><input type="button" style="border-bottom:0px;" name="button" id="btn1" value="Add" onclick="AddRow()"></th>
+					<th class="btn2"><input type="button" style="border-bottom:0px;" name="button" id="btn2" value="Clear" onclick="clear();"></th>
+				</tr>
+		</table>
+	</thead>
+
+		<table border="2" id="show" class="con">
+			<thead style="background-color: #55608f;">
+				<tr class="abc">
+					<th class="ths">Name</th>
+					<th class="ths">Age</th>
+					<th class="ths">Email</th>
+					<th class="ths">Blood Group</th>
+					<th class="ths">Address</th>
+					<th class="ths">Date of birth</th>
+					<th class="ths">Mobile no</th> 
+					<th class="ths">Gender</th>
+					<th class="ths">Covid affected</th>
+					<th class="ths">Covid recover</th>
+					<th class="ths">Vaccine status</th>
+
+				</tr>
+			</thead>
+			<tbody class="tb">
+			</tbody>
+		</table>
+	     <div class="btn">
+			<button class="signUpBtn">COVID-19 REGISTRATION FORM</button>
+		 </div>	
+  <img src="covid.png" class="absolute">
+  	
+	<script src="script.js"></script>
+</body>
+ 
+</html>
